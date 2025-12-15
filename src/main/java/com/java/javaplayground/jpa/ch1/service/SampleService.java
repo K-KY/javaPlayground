@@ -19,6 +19,10 @@ public class SampleService {
         entityManager.persist(sample);
     }
 
+    public Sample findById(long id) {
+        return entityManager.find(Sample.class, id);
+    }
+
 }
 
 
