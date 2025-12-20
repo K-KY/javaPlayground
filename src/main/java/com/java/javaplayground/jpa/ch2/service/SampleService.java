@@ -1,6 +1,6 @@
-package com.java.javaplayground.jpa.ch1.service;
+package com.java.javaplayground.jpa.ch2.service;
 
-import com.java.javaplayground.jpa.ch1.entity.Sample;
+import com.java.javaplayground.jpa.ch2.entity.Sample;
 import jakarta.persistence.EntityManager;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,4 +1,4 @@
-package com.java.javaplayground.jpa.ch1.entity;
+package com.java.javaplayground.jpa.ch2.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -38,5 +38,15 @@ public class Sample {
 
     public String getGender() {
         return gender;
+    }
+
+    @Override
+    public String toString() {
+        return "Sample{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", gender='" + gender + '\'' +
+                '}';
     }
 }
