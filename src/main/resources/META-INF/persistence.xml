@@ -19,6 +19,7 @@
         <!--기본적으로 엔티티 스캔이 꺼져있음 엔티티 클래스 명시 해줘야함-->
         <class>com.java.javaplayground.jpa.ch2.entity.Sample</class>
         <class>com.java.javaplayground.jpa.test.Test</class>
+        <class>com.java.javaplayground.jpa.test.TestChild</class>
 
         <properties>
             <!-- JDBC 설정 -->
