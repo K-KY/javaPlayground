@@ -1,4 +1,4 @@
-package com.java.javaplayground.jpa.ch2.entity;
+package com.java.javaplayground.data.jpa.ch2.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

@@ -1,4 +1,4 @@
-package com.java.javaplayground.jpa.ch4;
+package com.java.javaplayground.data.jpa.ch4;
 
 public enum OrderStatus {
     ORDER, CANCEL

@@ -1,6 +1,6 @@
-package com.java.javaplayground.jpa.ch3;
+package com.java.javaplayground.data.jpa.ch3;
 
-import com.java.javaplayground.jpa.ch2.entity.Sample;
+import com.java.javaplayground.data.jpa.ch2.entity.Sample;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;

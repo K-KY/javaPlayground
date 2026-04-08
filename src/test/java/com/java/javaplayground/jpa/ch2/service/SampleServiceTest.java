@@ -1,6 +1,7 @@
 package com.java.javaplayground.jpa.ch2.service;
 
-import com.java.javaplayground.jpa.ch2.entity.Sample;
+import com.java.javaplayground.data.jpa.ch2.entity.Sample;
+import com.java.javaplayground.data.jpa.ch2.service.SampleService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
