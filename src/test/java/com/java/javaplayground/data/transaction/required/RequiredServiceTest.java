@@ -78,6 +78,11 @@ class RequiredServiceTest {
     }
 
     @Test
+    void 언체크_예외_무시() throws Exception {
+        requiredService.saveCatchException(false, false, true);
+    }
+
+    @Test
     void deleteAll() {
         requiredService.deleteAll();
     }

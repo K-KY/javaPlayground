@@ -46,6 +46,25 @@ public class RequiredService {
         }
     }
 
+    @Transactional(propagation = Propagation.REQUIRED)
+    public void saveCatchException(boolean exception, boolean seperatedException, boolean seperatedUncheck) throws Exception {
+        System.out.println("RequiredService.saveUncheckedCatchException");
+        TransactionEntity transactionEntity = new TransactionEntity();
+        transactionEntity.setName(UUID.randomUUID().toString().substring(0, 8));
+        transactionEntity.setDescription("RequiredService.saveUncheckedCatchException 에 의해 저장됨");
+        repository.save(transactionEntity);
+        try {
+            seperatedService.saveSeperatedCheckedException(seperatedException);
+            seperatedService.save(seperatedUncheck);
+        } catch (Exception e) {
+            System.out.println("CATCH EXCEPTION" + e.getMessage());
+        }
+        if (exception) {
+            throw new Exception("Exception For Rollback");
+        }
+
+    }
+
     public void saveChild(boolean exception) {
         System.out.println("RequiredService.saveChild");
         TransactionEntity transactionEntity = new TransactionEntity();
